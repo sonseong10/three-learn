@@ -190,7 +190,6 @@ const ThreeJSComponent: FC = () => {
       controls.autoRotateSpeed = 1.0;
 
       stats = new Stats();
-      document.body.appendChild(stats.dom);
 
       window.addEventListener("resize", onWindowResize);
 
