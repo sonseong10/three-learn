@@ -6,6 +6,7 @@ import {
   OrbitControls,
 } from "three/examples/jsm/Addons.js";
 import Stats from "three/examples/jsm/libs/stats.module.js";
+import modelPath from "../../assets/lovly_face.glb?url";
 
 const MAX_MODEL_COUNT = 100;
 
@@ -87,7 +88,7 @@ const ThreeJSComponent: FC = () => {
       initBatchedMesh();
     };
 
-    const modelUrl = "/src/assets/lovly_face.glb";
+    const modelUrl = modelPath;
 
     function loadAndAddModel() {
       const loader = new GLTFLoader();
